@@ -25,7 +25,7 @@ a {
 body {
   font-family: "main-font", sans-serif;
   color: white;
-  background: #121212;
+  background: #000000;
 }
 
 h1 {
@@ -42,7 +42,7 @@ p {
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  background-color: #121212;
+  background-color: #000000;
 }
 .navigation ul {
   width: 100%;
@@ -121,6 +121,7 @@ p {
     width: 30px;
     height: 2px;
     position: relative;
+    z-index: 2;
   }
   .navigation .nav-toggle-icon-open:before, .navigation .nav-toggle-icon-open:after {
     content: "";
@@ -150,12 +151,13 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #121212;
+    background: #000000;
     height: 100vh;
     width: 100vw;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
   }
 }
 
@@ -176,15 +178,26 @@ p {
   padding-bottom: 56.25%;
   overflow: hidden;
 }
+.hero-banner h1 {
+  position: absolute;
+  top: 50%;
+  text-transform: uppercase;
+  width: 100vw;
+  text-align: center;
+  font-size: 8vh;
+  opacity: 1;
+  letter-spacing: 5px;
+}
 
 .video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 130%;
   -o-object-fit: cover;
      object-fit: cover;
+  opacity: 0.2;
 }
 
 .video::-webkit-media-controls {

@@ -107,6 +107,7 @@
 			width: 30px;
 			height: 2px;
 			position: relative;
+			z-index: 2;
 
 			&:before,
 			&:after {
@@ -147,6 +148,7 @@
 			position: absolute;
 			top: 0;
 			left: 0;
+			z-index: 1;
 		}
 	}
 }
