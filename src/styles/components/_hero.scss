@@ -1,0 +1,36 @@
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; // Ratio 16:9 (pour une vidéo en plein écran)
+  overflow: hidden;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; // Pour couvrir toute la zone de la vidéo
+}
+
+// Masquer les contrôles de la vidéo
+.video::-webkit-media-controls {
+  display: none;
+}
+
+// Masquer les contrôles de la vidéo pour les navigateurs basés sur Chromium
+.video::-webkit-media-controls-enclosure {
+  display: none;
+}
+
+// Masquer les contrôles de la vidéo pour Firefox
+.video::-moz-media-controls {
+  display: none;
+}
+
+// Masquer les contrôles de la vidéo pour IE
+.video::-ms-media-controls {
+  display:none;
+}

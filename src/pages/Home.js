@@ -1,11 +1,12 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
+import Hero from '../components/Hero';
 
 const Home = () => {
   return (
     <div>
       <Navigation />
-      <h1>Home</h1>
+      <Hero/>
     </div>
   );
 };
